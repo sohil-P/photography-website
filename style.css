@@ -130,7 +130,7 @@ html {
 .home-section {
   position: relative;
   min-height: 100vh;
-  background: url("Images/home-bg2.png") no-repeat center/cover;
+  background: url("Images/home-bg.png") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
