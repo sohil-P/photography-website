@@ -7,10 +7,15 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     document.getElementById("loader").style.display = "none";
-    document.getElementById("content").style.display = "block";
+    document.getElementById("main-content").style.display = "block";
+    document.body.classList.remove("loading");
+
     AOS.init();
   }, delay);
 });
+
+// Add this at start of body tag
+document.body.classList.add("loading");
 
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");

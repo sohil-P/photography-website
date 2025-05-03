@@ -40,6 +40,9 @@ html {
     transform: scale(1);
   }
 }
+body.loading {
+  overflow: hidden;
+}
 
 /* Navbar Styles */
 .navbar {
