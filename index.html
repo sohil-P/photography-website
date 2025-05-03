@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Digital Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="aos.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="Images/AI-digital-logo.jpeg" alt="Logo" />
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home section  -->
+    <section class="home-section section-padding" id="home">
+      <div class="home-content">
+        <h1>Welcome to My Photography World</h1>
+        <p>
+          We blend artificial intelligence with artistic vision to capture
+          unforgettable moments and create stunning visuals. Whether it’s
+          portraits, events, or branding, we turn your story into visual magic.
+        </p>
+        <a href="#portfolio" class="btn"
+          >Visit Portfolio <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+
+      <div class="home-images">
+        <div class="image-wrapper image1">
+          <img src="images/umang-img.webp" alt="Photographer" />
+        </div>
+        <div class="image-wrapper image2">
+          <img src="images/rita-img1.jpg" alt="Portrait Work" />
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-images">
+          <img
+            src="images/komit-1.jpg"
+            alt="Image 1"
+            class="about-img img-top-left"
+          />
+          <img
+            src="images/maulik-img.jpg"
+            alt="Image 2"
+            class="about-img img-bottom-right"
+          />
+        </div>
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            At <strong>AI Digital Studio</strong>, we blend creativity with
+            smart technology to produce exceptional photography, videography,
+            and digital services. Our team leverages artificial intelligence to
+            enhance your visual stories — whether it’s personal, business, or
+            promotional.
+          </p>
+          <p>
+            We believe in originality, storytelling, and professional quality.
+            Let’s work together to turn your vision into impactful digital
+            media.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section -->
+    <section class="service-section" id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="service-boxes">
+        <div class="service-card video-service">
+          <div class="overlay"></div>
+          <div class="service-text">
+            <h3>Videography</h3>
+            <p>
+              We produce cinematic-quality videos that capture moments with
+              emotion and creativity—perfect for weddings, events, and
+              promotional content.
+            </p>
+          </div>
+          <div class="arrow-icon">
+            <span>&rarr;</span>
+          </div>
+        </div>
+        <div class="service-card photo-service">
+          <div class="overlay"></div>
+          <div class="service-text">
+            <h3>Photography</h3>
+            <p>
+              We deliver artistic and high-resolution photos—from portraits to
+              commercial shoots—bringing your story to life through the lens.
+            </p>
+          </div>
+          <div class="arrow-icon">
+            <span>&rarr;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section class="portfolio-section" id="portfolio">
+      <h2 class="section-title">Our Portfolio</h2>
+      <div class="portfolio-grid">
+        <img src="Images/portfolio-1.webp" alt="Portfolio 1" />
+        <img src="Images/portfolio-2.webp" alt="Portfolio 2" />
+        <img src="Images/portfolio-3.webp" alt="Portfolio 3" />
+        <img src="Images/portfolio-4.webp" alt="Portfolio 4" />
+        <img src="Images/portfolio-5.webp" alt="Portfolio 5" />
+        <img src="Images/umang-img.webp" alt="Portfolio 6" />
+        <img src="Images/rita-img2.jpg" alt="Portfolio 7" />
+        <img src="Images/maulik-img.jpg" alt="Portfolio 8" />
+      </div>
+      <div class="portfolio-btn">
+        <button type="button">View More</button>
+      </div>
+    </section>
+
+    <!-- pricing section -->
+    <section class="pricing-section" id="pricing">
+      <h2 class="section-title">Our Pricing</h2>
+      <div class="pricing-cards">
+        <!-- Silver Package -->
+        <div class="pricing-card silver">
+          <h3>Silver Package</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Basic Photography</li>
+            <li><i class="fas fa-check-circle"></i> Basic Photo Editing</li>
+            <li><i class="fas fa-check-circle"></i> 3 Hours Videography</li>
+            <li>
+              <i class="fas fa-check-circle"></i> 300 Selected Photos Album
+            </li>
+            <li><i class="fas fa-check-circle"></i> Basic Videography</li>
+          </ul>
+          <button type="button" class="pricing-btn p-one">Get Started</button>
+        </div>
+
+        <!-- Gold Package -->
+        <div class="pricing-card gold">
+          <h3>Gold Package</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> DSLR Photography</li>
+            <li><i class="fas fa-check-circle"></i> HD Videography</li>
+            <li><i class="fas fa-check-circle"></i> Gimbal Video Shoot</li>
+            <li><i class="fas fa-check-circle"></i> Covers Album</li>
+            <li><i class="fas fa-check-circle"></i> Drone Camera</li>
+            <li><i class="fas fa-check-circle"></i> Day Photography</li>
+            <li><i class="fas fa-check-circle"></i> Cinematic Teaser</li>
+            <li><i class="fas fa-check-circle"></i> Cinematic Highlight</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Advance WhatsApp Invitation
+            </li>
+          </ul>
+          <button type="button" class="pricing-btn p-two">Get Started</button>
+        </div>
+
+        <!-- Platinum Package -->
+        <div class="pricing-card platinum">
+          <h3>Platinum Package</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> HD Photography</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Cinematic Videography 4K
+            </li>
+            <li><i class="fas fa-check-circle"></i> Gimbal Video Shoot</li>
+            <li><i class="fas fa-check-circle"></i> Photo Book Album</li>
+            <li><i class="fas fa-check-circle"></i> Drone Camera</li>
+            <li><i class="fas fa-check-circle"></i> Day Photography</li>
+            <li><i class="fas fa-check-circle"></i> Pre-Wedding 2 Song</li>
+            <li><i class="fas fa-check-circle"></i> Cinematic Teaser</li>
+            <li><i class="fas fa-check-circle"></i> Cinematic Highlight</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Advance WhatsApp Invitation
+            </li>
+          </ul>
+          <button type="button" class="pricing-btn p-three">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-container">
+        <!-- Left Info -->
+        <div class="contact-info">
+          <div class="info-block">
+            <div class="icon-circle">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>
+                At.Post: Bhalusna, Ta: Satlasana, Dis: Mehsana, Gujarat - 384330
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="info-block">
+            <div class="icon-circle">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+91 78638 48293 - Komit</p>
+              <p>+91 76989 17734 - Maulik</p>
+            </div>
+          </div>
+          <hr />
+          <div class="info-block">
+            <div class="icon-circle">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email Us</h4>
+              <p>komitprajapati02@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Name" required />
+            <input type="text" placeholder="Address" required />
+            <input type="tel" placeholder="Phone" required />
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/ai_digital_studio_0001/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/@KooMuuu/featured"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://www.facebook.com/prajapati.Maulik.360"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </div>
+        <p class="footer-text">
+          © 2025 AI Digital Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
