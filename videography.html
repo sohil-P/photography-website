@@ -66,8 +66,10 @@
             <p>Capturing moments, creating memories.</p>
             <div class="box-container">
               <div class="box-one box">
-                <i class="fa-brands fa-instagram"></i>
-                <p>Reels Making</p>
+                <a href="#reels-making"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#reels-making"><p>Reels Making</p></a>
               </div>
               <div class="box-two box">
                 <p>Wedding Videography</p>
@@ -82,41 +84,65 @@
           </div>
         </div>
       </section>
+
+      <section class="reels-making" id="reels-making">
+        <div class="reels-title">
+          <h2>Reels Making</h2>
+        </div>
+        <div class="reels-container">
+          <div class="grid">
+            <div class="reel-box">
+              <video class="myVideo" loop playsinline>
+                <source src="Images/reel-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="reel-box">
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/reel-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="reel-box">
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/reel-3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="reel-box">
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/reel-4.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="reel-box">
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/reel-4.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="reel-box">
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/reel-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="reel-box">
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/reel-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="reel-box">
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/reel-3.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="video-modal" id="videoModal">
+            <span class="close-btn" onclick="closeModal()">&#x2715;</span>
+            <video id="modalVideo" controls autoplay></video>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="./aos.js"></script>
     <script src="./script.js"></script>
-
-    <script>
-      const text = "Videography - AI Digital Studio!";
-      let i = 0;
-      let isDeleting = false;
-      const speed = 100;
-      const delay = 1500; // Delay before restart
-
-      function typeWriterLoop() {
-        const heading = document.getElementById("video-heading");
-
-        if (!isDeleting) {
-          heading.innerHTML = text.substring(0, i + 1);
-          i++;
-          if (i === text.length) {
-            isDeleting = true;
-            setTimeout(typeWriterLoop, delay); // wait before deleting
-            return;
-          }
-        } else {
-          heading.innerHTML = text.substring(0, i - 1);
-          i--;
-          if (i === 0) {
-            isDeleting = false;
-          }
-        }
-
-        setTimeout(typeWriterLoop, speed);
-      }
-
-      window.addEventListener("DOMContentLoaded", typeWriterLoop);
-    </script>
+    <script src="./videography.js"></script>
   </body>
 </html>
