@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+}
 
 /* Loader Style  */
 #loader {
@@ -596,7 +599,7 @@ body.loading {
 /* Portfolio Responsive */
 @media (max-width: 998px) {
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 767px) {

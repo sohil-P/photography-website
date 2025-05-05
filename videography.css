@@ -1,0 +1,183 @@
+/* hero */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hero-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
+}
+.box-container .box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.box-container .box-one {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.box-container .box-one i {
+  font-size: 50px;
+  color: #2a2a2a;
+}
+.box-container .box-one p {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #232323;
+}
+.box-container .box-two {
+  background: url("Images/wedding-2.jpg") no-repeat center/cover;
+  position: relative;
+}
+.box-container .box-three {
+  background: url("Images/event-video.jpg") no-repeat center/cover;
+  position: relative;
+}
+.box-container .box-four {
+  background: url("Images/prewedding-video.jpg") no-repeat center/cover;
+  position: relative;
+}
+.box-container .box-two::after,
+.box-container .box-three::after,
+.box-container .box-four::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 1;
+}
+.box-container .box-two p,
+.box-container .box-three p,
+.box-container .box-four p {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+}
+@media (max-width: 998px) {
+  .hero-content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+  }
+  .hero-content p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  .hero-content p {
+    font-size: 20px;
+  }
+  .box-container .box {
+    width: 120px;
+    height: 120px;
+  }
+  .box-container .box-one i {
+    font-size: 35px;
+  }
+  .box-container .box-one p {
+    font-size: 16px;
+  }
+  .box-container .box-two p,
+  .box-container .box-three p,
+  .box-container .box-four p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 585px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .box-container .box {
+    width: 110px;
+    height: 110px;
+  }
+  .box-container .box-one i {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .box-container .box-one p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .box-container .box-two p,
+  .box-container .box-three p,
+  .box-container .box-four p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
