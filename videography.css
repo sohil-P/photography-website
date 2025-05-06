@@ -1,4 +1,7 @@
 /* hero */
+a {
+  color: #fff;
+}
 
 .hero {
   height: 100vh;
@@ -187,9 +190,11 @@
   scroll-margin-top: 40px;
   padding: 20px 60px;
 }
-.reels-title h2 {
+.videography-title h2 {
   margin-top: 20px;
-  font-size: 50px;
+  font-size: 45px;
+  color: #00c4cc;
+  font-weight: 500;
 }
 .reels-container {
   padding: 20px 0;
@@ -257,7 +262,7 @@
   #reels-making {
     padding: 20px;
   }
-  .reels-title h2 {
+  .videography-title h2 {
     font-size: 40px;
   }
   .reel-box {
@@ -266,7 +271,7 @@
   }
 }
 @media (max-width: 585px) {
-  .reels-title h2 {
+  .videography-title h2 {
     font-size: 35px;
   }
   .reel-box {
@@ -277,5 +282,55 @@
     width: 100%;
     max-width: 300px;
     border-radius: 12px;
+  }
+}
+
+/* wedding section */
+#wedding {
+  scroll-margin-top: 50px;
+  padding: 20px 60px;
+}
+.wedding-container {
+  padding: 20px 0;
+  margin-top: 30px;
+}
+.wedding-box {
+  width: 250px;
+  grid-column: span 3;
+  margin: auto;
+  cursor: pointer;
+}
+.wedding-box video {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1155px) {
+  .wedding-box {
+    width: 200px;
+  }
+}
+@media (max-width: 998px) {
+  .wedding-box {
+    width: 200px;
+    grid-column: span 4;
+  }
+}
+@media (max-width: 767px) {
+  #wedding {
+    padding: 20px;
+  }
+  .wedding-box {
+    width: 250px;
+    grid-column: span 6;
+  }
+}
+@media (max-width: 585px) {
+  .wedding-box {
+    width: 300px;
+    grid-column: span 12;
   }
 }

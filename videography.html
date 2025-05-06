@@ -34,12 +34,12 @@
             /></a>
           </div>
           <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#portfolio">Portfolio</a></li>
+            <li><a href="./index.html#pricing">Pricing</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
           </ul>
           <div class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
@@ -62,22 +62,44 @@
           <div class="overlay"></div>
 
           <div class="hero-content">
-            <h1 id="video-heading"></h1>
-            <p>Capturing moments, creating memories.</p>
+            <h1
+              id="video-heading"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></h1>
+            <p data-aos="fade-up" data-aos-duration="1000">
+              Capturing moments, creating memories.
+            </p>
             <div class="box-container">
-              <div class="box-one box">
+              <div
+                class="box-one box"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <a href="#reels-making"
                   ><i class="fa-brands fa-instagram"></i
                 ></a>
                 <a href="#reels-making"><p>Reels Making</p></a>
               </div>
-              <div class="box-two box">
-                <p>Wedding Videography</p>
+              <div
+                class="box-two box"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <a href="#wedding"><p>Wedding Videography</p></a>
               </div>
-              <div class="box-three box">
+              <div
+                class="box-three box"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <p>Event Videography</p>
               </div>
-              <div class="box-four box">
+              <div
+                class="box-four box"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <p>Pre-Wedding Shooting</p>
               </div>
             </div>
@@ -86,27 +108,42 @@
       </section>
 
       <section class="reels-making" id="reels-making">
-        <div class="reels-title">
-          <h2>Reels Making</h2>
+        <div class="videography-title">
+          <h2 data-aos="fade-up" data-aos-duration="1000">Reels Making</h2>
         </div>
         <div class="reels-container">
           <div class="grid">
-            <div class="reel-box">
+            <div class="reel-box" data-aos="fade-up" data-aos-duration="1000">
               <video class="myVideo" muted loop playsinline>
                 <source src="Images/reel-3.mp4" type="video/mp4" />
               </video>
             </div>
-            <div class="reel-box">
+            <div
+              class="reel-box"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
               <video class="myVideo" muted loop playsinline>
                 <source src="Images/reel-4.mp4" type="video/mp4" />
               </video>
             </div>
-            <div class="reel-box">
+            <div
+              class="reel-box"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               <video class="myVideo" muted loop playsinline>
                 <source src="Images/reel-3.mp4" type="video/mp4" />
               </video>
             </div>
-            <div class="reel-box">
+            <div
+              class="reel-box"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
               <video class="myVideo" muted loop playsinline>
                 <source src="Images/reel-4.mp4" type="video/mp4" />
               </video>
@@ -116,6 +153,47 @@
           <div class="video-modal" id="videoModal">
             <span class="close-btn" onclick="closeModal()">&#x2715;</span>
             <video id="modalVideo" controls autoplay></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="wedding" id="wedding">
+        <div class="videography-title">
+          <h2 data-aos="fade-up" data-aos-duration="1000">
+            Wedding Videography
+          </h2>
+        </div>
+        <div class="wedding-container">
+          <div class="grid">
+            <div
+              class="wedding-box"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/wedding-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div
+              class="wedding-box"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/wedding-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div
+              class="wedding-box"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <video class="myVideo" muted loop playsinline>
+                <source src="Images/wedding-3.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </section>
