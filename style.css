@@ -520,6 +520,24 @@ body.loading {
 .arrow-icon:hover span {
   transform: translateX(3px);
 }
+.demo-btn {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.demo-btn button {
+  background-color: #00c4cc;
+  color: #fff;
+  padding: 12px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
 
 /* Service Responsive */
 @media (max-width: 998px) {
@@ -553,6 +571,14 @@ body.loading {
   }
   .service-text p {
     font-size: 14px;
+  }
+  .demo-btn {
+    bottom: 40px;
+    left: 0;
+  }
+  .demo-btn button {
+    padding: 12px 18px;
+    font-size: 12px;
   }
 }
 
