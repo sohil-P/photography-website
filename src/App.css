@@ -121,7 +121,7 @@ a {
 .home-section {
   position: relative;
   min-height: 100vh;
-  background: url("Images/bg-image.jpg") no-repeat center/cover;
+  background: url("/public/Images/bg-image2.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: space-between;

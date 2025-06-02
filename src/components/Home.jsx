@@ -27,14 +27,14 @@ function Home() {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <img src="/Images/umang-img.webp" alt="Photographer" />
+          <img src="Images/umang-img.webp" alt="Photographer" />
         </div>
         <div
           className="image-wrapper image2"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <img src="/Images/rita-img1.jpg" alt="Portrait Work" />
+          <img src="Images/rita-img1.jpg" alt="Portrait Work" />
         </div>
       </div>
     </section>
