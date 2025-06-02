@@ -121,7 +121,7 @@ a {
 .home-section {
   position: relative;
   min-height: 100vh;
-  background: url("/public/Images/bg-image2.jpg") no-repeat center/cover;
+  background: url("/public/Images/bg-image.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -451,10 +451,10 @@ a {
   transform: scale(1.03);
 }
 .video-service {
-  background-image: url("Images/video-camera.jpg");
+  background-image: url("/public/Images/video-camera.jpg");
 }
 .photo-service {
-  background-image: url("Images/photo-camera.jpg");
+  background-image: url("/public/Images/photo-camera.jpg");
 }
 .overlay {
   position: absolute;

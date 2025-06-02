@@ -6,10 +6,10 @@ function ReelsSection() {
   const [modalSrc, setModalSrc] = useState("");
 
   const videos = [
-    "/Images/reel-3.mp4",
-    "/Images/reel-4.mp4",
-    "/Images/reel-3.mp4",
-    "/Images/reel-4.mp4",
+    "Images/reel-3.mp4",
+    "Images/reel-4.mp4",
+    "Images/reel-3.mp4",
+    "Images/reel-4.mp4",
   ];
 
   const handleThumbClick = (src) => {

@@ -8,12 +8,12 @@ function About() {
           data-aos-duration="1000"
         >
           <img
-            src="/Images/komit-1.jpg"
+            src="Images/komit-1.jpg"
             alt="Image 1"
             className="about-img img-top-left"
           />
           <img
-            src="/Images/maulik-img.jpg"
+            src="Images/maulik-img.jpg"
             alt="Image 2"
             className="about-img img-bottom-right"
           />

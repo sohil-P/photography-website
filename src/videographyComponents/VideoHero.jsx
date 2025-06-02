@@ -3,7 +3,7 @@ function VideoHero() {
     <section className="hero">
       <div className="hero-video-container">
         <video
-          src="/Images/videography-video.mp4"
+          src="Images/videography-video.mp4"
           autoPlay
           loop
           muted
