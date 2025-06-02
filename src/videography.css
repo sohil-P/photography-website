@@ -1,0 +1,313 @@
+/* hero */
+a {
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hero-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.hero-content h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0;
+}
+.box-container .both-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.box-container .box {
+  /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+  background: linear-gradient(45deg, #dcd7f1d3, #2c2c2ddc);
+  background-size: 200% 200%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  transition: 0.4s;
+  animation: gradient-animation 3s infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.box-container .box:hover {
+  transform: scale(1.1);
+}
+.box-container .box-one p,
+.box-container .box-two p,
+.box-container .box-three p,
+.box-container .box-four p {
+  font-size: 18px;
+  margin: auto;
+  color: #232323;
+}
+
+.drive-btn {
+  margin-top: 30px;
+}
+.drive-btn p {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.drive-btn a {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #c3cfe2;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.drive-btn a:hover {
+  background-image: linear-gradient(135deg, #f4f5f7 0%, #c4c5c6 100%);
+  transform: scale(1.05);
+}
+@media (max-width: 998px) {
+  .hero-content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+  }
+  .hero-content p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  .hero-content p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 585px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    margin: 35px 0 0 0;
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .hero-content p {
+    margin: 20px 0 0 0;
+    font-size: 22px;
+  }
+  .hero-video-container video {
+    border-radius: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .overlay {
+    border-radius: 0;
+  }
+  .box-container {
+    gap: 10px;
+  }
+  .box-container .both-box {
+    gap: 10px;
+  }
+
+  .drive-btn p {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+#reels-section,
+#wedding-section,
+#event-section,
+#prewedding-section {
+  margin: 10px 0;
+  scroll-margin-top: 50px;
+  padding: 20px 60px;
+  background-image: url("Images/bg-image3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+.videography-title h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #22333b;
+  font-weight: 500;
+}
+.video-container {
+  padding: 20px 0;
+  margin-top: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 10px 0;
+}
+.video-box {
+  width: 250px;
+  grid-column: span 3;
+  margin: auto;
+  cursor: pointer;
+}
+.video-box video {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+}
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  flex-direction: column;
+}
+.video-modal video {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+}
+.close-btn {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+.bookBtn {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+.booking-btn {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #22333b;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.booking-btn:hover {
+  background-color: #c3cfe2;
+}
+
+/*------------ responsive ------------*/
+
+@media (max-width: 1155px) {
+  .video-box {
+    width: 200px;
+  }
+}
+@media (max-width: 998px) {
+  .video-box {
+    width: 200px;
+    grid-column: span 4;
+  }
+}
+
+@media (max-width: 767px) {
+  #reels-section,
+  #wedding-section,
+  #event-section,
+  #prewedding-section {
+    padding: 20px;
+  }
+  .videography-title h2 {
+    font-size: 40px;
+  }
+  .video-box {
+    width: 250px;
+    grid-column: span 6;
+  }
+}
+@media (max-width: 585px) {
+  .videography-title h2 {
+    font-size: 35px;
+  }
+  .video-box {
+    width: 300px;
+    grid-column: span 12;
+  }
+  .video-modal video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+  }
+}
