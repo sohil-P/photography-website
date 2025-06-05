@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Videography from "./pages/Videography.jsx";
+import Photography from "./pages/Photography.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -10,6 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Videography" element={<Videography />} />
+        <Route path="/Photography" element={<Photography />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -33,74 +33,63 @@ a {
 }
 .hero-content {
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   color: white;
   text-align: center;
-  padding: 20px;
 }
 .hero-content h1 {
   font-size: 50px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 .hero-content p {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
 }
 .box-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 50px 0;
-}
-.box-container .both-box {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  margin: 30px 0;
+  /* background: lightcoral; */
+  padding: 10px;
 }
 .box-container .box {
-  /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
-  background: linear-gradient(45deg, #dcd7f1d3, #2c2c2ddc);
-  background-size: 200% 200%;
-  padding: 15px 20px;
+  width: 230px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 15px 25px;
   border-radius: 50px;
   transition: 0.4s;
-  animation: gradient-animation 3s infinite;
-}
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 .box-container .box:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .box-container .box-one p,
 .box-container .box-two p,
 .box-container .box-three p,
 .box-container .box-four p {
-  font-size: 18px;
+  font-size: 16px;
   margin: auto;
   color: #232323;
 }
 
 .drive-btn {
-  margin-top: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .drive-btn p {
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 30px;
 }
 .drive-btn a {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -109,18 +98,14 @@ a {
   font-weight: 500;
   text-decoration: none;
   padding: 10px 20px;
-  border: 1px solid #c3cfe2;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
 .drive-btn a:hover {
-  background-image: linear-gradient(135deg, #f4f5f7 0%, #c4c5c6 100%);
   transform: scale(1.05);
 }
 @media (max-width: 998px) {
   .hero-content {
-    width: 100%;
-    padding: 20px;
     text-align: center;
   }
   .hero-content h1 {
@@ -129,11 +114,11 @@ a {
   .hero-content p {
     font-size: 22px;
   }
+  .box-container {
+    gap: 20px;
+  }
 }
 @media (max-width: 768px) {
-  .hero-content {
-    width: 100%;
-  }
   .hero-content h1 {
     font-size: 35px;
     line-height: 1.5;
@@ -143,40 +128,44 @@ a {
   }
 }
 @media (max-width: 585px) {
-  .hero-content {
-    width: 100%;
-  }
   .hero-content h1 {
-    margin: 35px 0 0 0;
     font-size: 30px;
-    line-height: 1.5;
   }
   .hero-content p {
-    margin: 20px 0 0 0;
-    font-size: 22px;
-  }
-  .hero-video-container video {
-    border-radius: 0;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .overlay {
-    border-radius: 0;
+    font-size: 18px;
   }
   .box-container {
     gap: 10px;
   }
-  .box-container .both-box {
-    gap: 10px;
+  .box-container .box {
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
   }
-
   .drive-btn p {
     font-size: 25px;
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  .hero-content p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  .box-container .box {
+    width: 150px;
+    padding: 10px;
+  }
+  .drive-btn p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .drive-btn a {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
 
@@ -184,20 +173,15 @@ a {
 #wedding-section,
 #event-section,
 #prewedding-section {
-  margin: 10px 0;
   scroll-margin-top: 50px;
   padding: 20px 60px;
-  background-image: url("/public/Images/bg-image3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 30px;
+  background: #fbfcfb;
 }
 .videography-title h2 {
+  text-align: center;
   margin-top: 20px;
   font-size: 40px;
   color: #22333b;
-  font-weight: 500;
 }
 .video-container {
   padding: 20px 0;
@@ -210,13 +194,15 @@ a {
   padding: 10px 0;
 }
 .video-box {
-  width: 250px;
+  width: 200px;
+  height: 300px;
   grid-column: span 3;
   margin: auto;
   cursor: pointer;
 }
 .video-box video {
   width: 100%;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
   object-fit: cover;
@@ -258,7 +244,6 @@ a {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   color: #22333b;
   font-size: 16px;
-  font-weight: 600;
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
@@ -269,15 +254,8 @@ a {
 }
 
 /*------------ responsive ------------*/
-
-@media (max-width: 1155px) {
-  .video-box {
-    width: 200px;
-  }
-}
 @media (max-width: 998px) {
   .video-box {
-    width: 200px;
     grid-column: span 4;
   }
 }
@@ -293,8 +271,13 @@ a {
     font-size: 40px;
   }
   .video-box {
-    width: 250px;
+    width: 200px;
+    height: 300px;
     grid-column: span 6;
+  }
+  .video-box video {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 585px) {
@@ -302,8 +285,27 @@ a {
     font-size: 35px;
   }
   .video-box {
-    width: 300px;
+    width: 200px;
+    height: 300px;
+    grid-column: span 6;
+  }
+  .video-box video {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .videography-title h2 {
+    font-size: 35px;
+  }
+  .video-box {
+    width: 250px;
+    height: 350px;
     grid-column: span 12;
+  }
+  .video-box video {
+    width: 100%;
+    height: 100%;
   }
   .video-modal video {
     width: 100%;

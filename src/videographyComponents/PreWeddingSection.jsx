@@ -25,7 +25,7 @@ function ReelsSection() {
   return (
     <section className="prewedding-section" id="prewedding-section">
       <div className="videography-title">
-        <h2>Pre-Wedding Shooting</h2>
+        <h2>Pre-Wedding</h2>
       </div>
 
       <div className="video-container">

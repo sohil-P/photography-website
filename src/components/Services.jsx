@@ -24,7 +24,7 @@ function Services() {
             </p>
           </div>
           <div className="arrow-icon">
-            <Link to="/videography">
+            <Link to="/Videography">
               <span style={{ cursor: "pointer" }}>&rarr;</span>
             </Link>
           </div>
@@ -58,7 +58,7 @@ function Services() {
             </p>
           </div>
           <div className="arrow-icon">
-            <Link to="/videography">
+            <Link to="/Photography">
               <span style={{ cursor: "pointer" }}>&rarr;</span>
             </Link>
           </div>

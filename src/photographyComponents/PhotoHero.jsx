@@ -1,23 +1,14 @@
-function VideoHero() {
+function PhotoHero() {
   return (
-    <section className="hero">
-      <div className="hero-video-container">
-        <video
-          src="Images/videography-video.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        ></video>
-        <div className="overlay"></div>
-
-        <div className="hero-content">
-          <h1 id="video-heading">Videography - AI Digital Studio!</h1>
-          <p>Capturing moments, Creating memories.</p>
-          <div className="box-container">
+    <section className="hero-p">
+      <div className="hero-p-container">
+        <div className="hero-p-content">
+          <h1 id="photo-heading">Photography - AI Digital Studio!</h1>
+          <p>Turning Moments into Timeless Memories.</p>
+          <div className="box-p-container">
             <div className="box-one box">
-              <a href="#reels-section">
-                <p>Reels Making</p>
+              <a href="#portrait">
+                <p>Portrait</p>
               </a>
             </div>
             <div className="box-two box">
@@ -51,5 +42,4 @@ function VideoHero() {
     </section>
   );
 }
-
-export default VideoHero;
+export default PhotoHero;
