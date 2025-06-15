@@ -14,19 +14,17 @@ function Pricing() {
           <h3>Silver Package</h3>
           <ul>
             <li>
-              <i className="fas fa-check-circle"></i> Basic Photography
+              <i className="fas fa-check-circle"></i> <p>Basic Photography</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Basic Photo Editing
+              <i className="fas fa-check-circle"></i> <p>Basic video shoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> 3 Hours Videography
+              <i className="fas fa-check-circle"></i> <p>Basic video editing</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> 300 Selected Photos Album
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i> Basic Videography
+              <i className="fas fa-check-circle"></i>
+              <p>Simple color correction</p>
             </li>
           </ul>
           <button type="button" className="pricing-btn p-one">
@@ -44,32 +42,28 @@ function Pricing() {
           <h3>Gold Package</h3>
           <ul>
             <li>
-              <i className="fas fa-check-circle"></i> DSLR Photography
+              <i className="fas fa-check-circle"></i> <p>DSLR video shoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> HD Videography
+              <i className="fas fa-check-circle"></i>
+              <p>Taditional photo shoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Gimbal Video Shoot
+              <i className="fas fa-check-circle"></i> <p>Drone shoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Covers Album
+              <i className="fas fa-check-circle"></i>
+              <p>Advance video editing with special effects</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Drone Camera
+              <i className="fas fa-check-circle"></i>
+              <p> Color grading</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Day Photography
+              <i className="fas fa-check-circle"></i> <p>Normal reels</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Cinematic Teaser
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i> Cinematic Highlight
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i> Advance WhatsApp
-              Invitation
+              <i className="fas fa-check-circle"></i> <p>Invitation card</p>
             </li>
           </ul>
           <button type="button" className="pricing-btn p-two">
@@ -87,35 +81,32 @@ function Pricing() {
           <h3>Platinum Package</h3>
           <ul>
             <li>
-              <i className="fas fa-check-circle"></i> HD Photography
+              <i className="fas fa-check-circle"></i>
+              <p>Traditional photoshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Cinematic Videography 4K
+              <i className="fas fa-check-circle"></i> <p>Candid photoshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Gimbal Video Shoot
+              <i className="fas fa-check-circle"></i>
+              <p>Cinematic videoshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Photo Book Album
+              <i className="fas fa-check-circle"></i> <p>Droneshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Drone Camera
+              <i className="fas fa-check-circle"></i>
+              <p>Cinematic video editing(high-level color grading)</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Day Photography
+              <i className="fas fa-check-circle"></i> <p>Cinametic reels</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Pre-Wedding 2 Song
+              <i className="fas fa-check-circle"></i>
+              <p>Advance invitation card</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> Cinematic Teaser
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i> Cinematic Highlight
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i> Advance WhatsApp
-              Invitation
+              <i className="fas fa-check-circle"></i> <p>Pre-wedding shoot</p>
             </li>
           </ul>
           <button type="button" className="pricing-btn p-three">

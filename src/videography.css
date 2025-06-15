@@ -57,7 +57,6 @@ a {
   flex-wrap: wrap;
   gap: 30px;
   margin: 30px 0;
-  /* background: lightcoral; */
   padding: 10px;
 }
 .box-container .box {
@@ -175,7 +174,7 @@ a {
 #prewedding-section {
   scroll-margin-top: 50px;
   padding: 20px 60px;
-  background: #fbfcfb;
+  background: #f1f6f1;
 }
 .videography-title h2 {
   text-align: center;
@@ -207,6 +206,7 @@ a {
   overflow: hidden;
   object-fit: cover;
   display: block;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 .video-modal {
   display: none;

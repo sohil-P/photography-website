@@ -147,10 +147,12 @@
   }
 }
 
+/* Portrait Section */
+
 #portrait {
   scroll-margin-top: 50px;
   padding: 20px 60px;
-  background: #fbfcfb;
+  background: #f1f6f1;
 }
 .photography-title h2 {
   text-align: center;
