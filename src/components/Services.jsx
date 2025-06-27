@@ -32,7 +32,7 @@ function Services() {
             <button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/drive/folders/1dYBOX7pMjfWWfJDJ6FkONfRQPEu3X8pk?usp=sharing",
+                  "https://drive.google.com/drive/folders/1zhoWVr7re67WeaFjEndj3ibBxC55yUQ6?usp=sharing",
                   "_blank"
                 )
               }
@@ -66,7 +66,7 @@ function Services() {
             <button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/drive/folders/1dYBOX7pMjfWWfJDJ6FkONfRQPEu3X8pk?usp=sharing",
+                  "https://drive.google.com/drive/folders/1iP7RjUrOOLX1yox2RuWKFupeNyqrVWgp?usp=sharing",
                   "_blank"
                 )
               }

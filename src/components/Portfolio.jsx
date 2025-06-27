@@ -10,7 +10,7 @@ function Portfolio() {
           data-aos-duration="1000"
         />
         <img
-          src="Images/portfolio-2.webp"
+          src="Images/portfolio-4.webp"
           alt="Portfolio 2"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -24,35 +24,35 @@ function Portfolio() {
           data-aos-delay="200"
         />
         <img
-          src="Images/portfolio-4.webp"
+          src="Images/portfolio-8.webp"
           alt="Portfolio 4"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="300"
         />
         <img
-          src="Images/portfolio-5.webp"
+          src="Images/rita-img2.jpg"
           alt="Portfolio 5"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="400"
         />
         <img
-          src="Images/umang-img.webp"
+          src="Images/portfolio-6.webp"
           alt="Portfolio 6"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="500"
         />
         <img
-          src="Images/rita-img2.jpg"
+          src="Images/portfolio-5.webp"
           alt="Portfolio 7"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="600"
         />
         <img
-          src="Images/maulik-img.jpg"
+          src="Images/portfolio-2.webp"
           alt="Portfolio 8"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -64,7 +64,7 @@ function Portfolio() {
           type="button"
           onClick={() =>
             window.open(
-              "https://drive.google.com/drive/folders/1dYBOX7pMjfWWfJDJ6FkONfRQPEu3X8pk?usp=sharing",
+              "https://drive.google.com/drive/folders/1iP7RjUrOOLX1yox2RuWKFupeNyqrVWgp?usp=sharing",
               "_blank"
             )
           }

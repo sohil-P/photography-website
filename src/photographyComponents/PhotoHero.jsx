@@ -30,7 +30,7 @@ function PhotoHero() {
           <div className="drive-btn">
             <p>Want to see all collection ?</p>
             <a
-              href="https://drive.google.com/drive/folders/1dYBOX7pMjfWWfJDJ6FkONfRQPEu3X8pk?usp=sharing"
+              href="https://drive.google.com/drive/folders/1iP7RjUrOOLX1yox2RuWKFupeNyqrVWgp?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

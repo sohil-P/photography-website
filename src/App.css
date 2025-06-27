@@ -123,7 +123,7 @@ a {
 .home-section {
   position: relative;
   min-height: 100vh;
-  background: url("/public/Images/bg-image.jpg") no-repeat center/cover;
+  background: url("/public/Images/photo-bg.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -602,19 +602,20 @@ a {
   background-color: #f9f9f9;
 }
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  column-count: 4;
+  column-gap: 20px;
   margin-top: 50px;
 }
+
 .portfolio-grid img {
   width: 100%;
-  height: auto;
+  margin-bottom: 20px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
+  break-inside: avoid;
 }
 .portfolio-grid img:hover {
   transform: scale(1.05);
@@ -648,17 +649,17 @@ a {
 /* Portfolio Responsive */
 @media (max-width: 998px) {
   .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
+    column-count: 3;
   }
 }
 @media (max-width: 767px) {
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+    column-count: 2;
   }
 }
 @media (max-width: 585px) {
   .portfolio-grid {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 }
 
