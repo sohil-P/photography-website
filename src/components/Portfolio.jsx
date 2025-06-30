@@ -31,7 +31,7 @@ function Portfolio() {
           data-aos-delay="300"
         />
         <img
-          src="Images/rita-img2.jpg"
+          src="Images/rita-img1.jpg"
           alt="Portfolio 5"
           data-aos="fade-up"
           data-aos-duration="1000"
