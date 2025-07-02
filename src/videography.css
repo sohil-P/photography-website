@@ -61,7 +61,7 @@ a {
 }
 .box-container .box {
   width: 230px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   padding: 15px 25px;
   border-radius: 50px;
   transition: 0.4s;
@@ -75,10 +75,10 @@ a {
 .box-container .box-four p {
   font-size: 16px;
   margin: auto;
-  color: #232323;
+  color: #fff;
 }
 
-.drive-btn {
+.more-info-box {
   padding: 10px;
   margin-top: 20px;
   display: flex;
@@ -86,21 +86,22 @@ a {
   justify-content: center;
   align-items: center;
 }
-.drive-btn p {
+.more-info-box p {
   font-size: 30px;
   font-weight: 500;
 }
-.drive-btn a {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #2c2c2c;
+.more-info-box .linkBtn {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #fff;
+  border: none;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 12px 30px;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
-.drive-btn a:hover {
+.more-info-box .linkBtn:hover {
   transform: scale(1.05);
 }
 @media (max-width: 998px) {
@@ -141,7 +142,7 @@ a {
     padding: 10px;
     font-size: 14px;
   }
-  .drive-btn p {
+  .more-info-box p {
     font-size: 25px;
     margin-bottom: 25px;
   }
@@ -158,20 +159,20 @@ a {
     width: 150px;
     padding: 10px;
   }
-  .drive-btn p {
+  .box-container .box p {
+    font-size: 14px;
+  }
+  .more-info-box p {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  .drive-btn a {
+  .more-info-box a {
     padding: 8px 16px;
     font-size: 14px;
   }
 }
 
-#reels-section,
-#wedding-section,
-#event-section,
-#prewedding-section {
+#demo-section {
   scroll-margin-top: 50px;
   padding: 20px 60px;
   background: #f1f6f1;
@@ -182,23 +183,34 @@ a {
   font-size: 40px;
   color: #22333b;
 }
+
 .video-container {
-  padding: 20px 0;
+  padding: 20px;
   margin-top: 30px;
 }
+
 .grid {
+  /* column-count: 4;
+  column-gap: 20px;
+  padding: 30px; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
-  padding: 10px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f1f6f1;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
 }
+
 .video-box {
-  width: 200px;
-  height: 300px;
-  grid-column: span 3;
-  margin: auto;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
   cursor: pointer;
+  grid-column: span 3;
+  /* break-inside: avoid; */
 }
+
 .video-box video {
   width: 100%;
   height: 100%;
@@ -234,75 +246,71 @@ a {
   right: 30px;
   cursor: pointer;
 }
-.bookBtn {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin-top: 30px;
-}
-.booking-btn {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #22333b;
-  font-size: 16px;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-.booking-btn:hover {
-  background-color: #c3cfe2;
-}
 
 /*------------ responsive ------------*/
 @media (max-width: 998px) {
+  /* .grid {
+    column-count: 3;
+    column-gap: 16px;
+    padding: 20px;
+  } */
   .video-box {
     grid-column: span 4;
+    height: 350px;
   }
 }
 
 @media (max-width: 767px) {
-  #reels-section,
-  #wedding-section,
-  #event-section,
-  #prewedding-section {
+  #demo-section {
     padding: 20px;
   }
   .videography-title h2 {
     font-size: 40px;
   }
+  /* .grid {
+    column-count: 2;
+    column-gap: 12px;
+    padding: 20px;
+  } */
   .video-box {
-    width: 200px;
-    height: 300px;
     grid-column: span 6;
+    height: 400px;
   }
   .video-box video {
     width: 100%;
     height: 100%;
   }
 }
+
 @media (max-width: 585px) {
+  #demo-section {
+    padding: 10px 20px;
+  }
+  .video-container {
+    padding: 10px;
+  }
   .videography-title h2 {
     font-size: 35px;
   }
   .video-box {
-    width: 200px;
-    height: 300px;
-    grid-column: span 6;
+    grid-column: span 12;
+    height: 400px;
   }
   .video-box video {
     width: 100%;
     height: 100%;
   }
 }
+
 @media (max-width: 450px) {
   .videography-title h2 {
     font-size: 35px;
   }
-  .video-box {
-    width: 250px;
-    height: 350px;
-    grid-column: span 12;
-  }
+  /* .grid {
+    column-count: 1;
+    column-gap: 0;
+    padding: 20px;
+  } */
   .video-box video {
     width: 100%;
     height: 100%;

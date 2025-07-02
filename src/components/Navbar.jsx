@@ -12,7 +12,7 @@ function Navbar() {
       <div className="navbar-container">
         <div className="logo">
           <a href="/">
-            <img src="Images/AI-digital-logo.jpeg" alt="Logo" />
+            <img src="Images/AI-digital-logo.webp" alt="Logo" />
           </a>
         </div>
         <ul

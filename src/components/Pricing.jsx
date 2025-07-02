@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Pricing() {
   return (
     <section className="pricing-section" id="pricing">
@@ -27,9 +29,11 @@ function Pricing() {
               <p>Simple color correction</p>
             </li>
           </ul>
-          <button type="button" className="pricing-btn p-one">
-            Get Started
-          </button>
+          <Link to={"/Silver"}>
+            <button type="button" className="pricing-btn p-one">
+              Get Started
+            </button>
+          </Link>
         </div>
 
         {/* Gold Package */}

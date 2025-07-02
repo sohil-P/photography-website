@@ -4,21 +4,43 @@ function Home() {
       <div className="home-container">
         <div className="home-content">
           <div className="main-content">
-            <div className="content-imgs">
-              <img src="./Images/home-img1.png" alt="" className="img1" />
-              <img src="./Images/home-img2.png" alt="" className="img2" />
+            <div
+              className="content-imgs"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img src="./Images/home-img1.webp" alt="" className="img1" />
+              <img src="./Images/home-img2.webp" alt="" className="img2" />
             </div>
             <div className="content-text">
-              <h3>Welcome to Our Photography World!</h3>
-              <h1>AI Digital Studio</h1>
-              <p>
+              <h3 data-aos="fade-up" data-aos-duration="1000">
+                Welcome to Our Photography World!
+              </h3>
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                AI Digital Studio
+              </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 We blend artificial intelligence with artistic vision to capture
                 unforgettable moments and create stunning visuals. Whether it’s
                 portraits, events, or branding, we turn your story into visual
                 magic.
               </p>
-              <button type="button" className="homeBtn">
-                <a href="#">Visit Portfolio</a>
+              <button
+                type="button"
+                className="homeBtn"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                <a href="#portfolio">Visit Portfolio</a>
               </button>
             </div>
           </div>

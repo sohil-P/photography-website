@@ -65,8 +65,7 @@ function Contact() {
             </div>
             <div>
               <h4>Call Us</h4>
-              <p>+91 78638 48293 - Komit</p>
-              <p>+91 76989 17734 - Maulik</p>
+              <p>+91 76989 17734 - Maulik | +91 78638 48293 - Komit</p>
             </div>
           </div>
           <hr />

@@ -3,7 +3,7 @@ function VideoHero() {
     <section className="hero">
       <div className="hero-video-container">
         <video
-          src="Images/videography-video.mp4"
+          src="Images/videography-bg.mp4"
           autoPlay
           loop
           muted
@@ -16,35 +16,37 @@ function VideoHero() {
           <p>Capturing moments, Creating memories.</p>
           <div className="box-container">
             <div className="box-one box">
-              <a href="#reels-section">
+              <a href="#">
                 <p>Reels Making</p>
               </a>
             </div>
             <div className="box-two box">
-              <a href="#wedding-section">
+              <a href="#">
                 <p>Wedding</p>
               </a>
             </div>
             <div className="box-three box">
-              <a href="#event-section">
+              <a href="#">
                 <p>Event</p>
               </a>
             </div>
             <div className="box-four box">
-              <a href="#prewedding-section">
+              <a href="#">
                 <p>Pre-Wedding</p>
               </a>
             </div>
           </div>
-          <div className="drive-btn">
-            <p>Want to see all collection ?</p>
-            <a
-              href="https://drive.google.com/drive/folders/1zhoWVr7re67WeaFjEndj3ibBxC55yUQ6?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here!
-            </a>
+          <div className="more-info-box">
+            <p>Want to see all collection?</p>
+            <button type="button" className="linkBtn">
+              <a
+                href="https://drive.google.com/drive/folders/1zhoWVr7re67WeaFjEndj3ibBxC55yUQ6?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click here!
+              </a>
+            </button>
           </div>
         </div>
       </div>

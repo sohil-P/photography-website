@@ -2,10 +2,7 @@ import { useEffect, useState } from "react";
 import Loader from "../components/loader";
 import Navbar from "../components/Navbar";
 import VideoHero from "../videographyComponents/VideoHero";
-import ReelsSection from "../videographyComponents/ReelsSection";
-import WeddingSection from "../videographyComponents/WeddingSection";
-import EventSection from "../videographyComponents/EventSection";
-import PreWeddingSection from "../videographyComponents/PreWeddingSection";
+import DemoSection from "../videographyComponents/DemoSection";
 import Footer from "../components/Footer";
 import "../App.css";
 import "../videography.css";
@@ -39,10 +36,7 @@ function Videography() {
         <>
           <Navbar />
           <VideoHero />
-          <ReelsSection />
-          <WeddingSection />
-          <EventSection />
-          <PreWeddingSection />
+          <DemoSection />
           <Footer />
         </>
       )}
