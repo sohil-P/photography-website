@@ -36,9 +36,6 @@ function PortraitSection() {
           data-aos-delay="300"
         />
       </div>
-      <div className="bookBtn">
-        <button className="booking-btn">Book Now</button>
-      </div>
     </section>
   );
 }

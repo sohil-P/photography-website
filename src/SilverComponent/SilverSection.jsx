@@ -1,4 +1,32 @@
+import { useState } from "react";
+
 function SilverSection() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [checkedItems, setCheckedItems] = useState({
+    photo: true,
+    video: true,
+    edit: true,
+    album: true,
+  });
+
+  const [days, setDays] = useState(1);
+
+  const handleCheckboxChange = (key) => {
+    setCheckedItems((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+  const isFormDisabled = !Object.values(checkedItems).some(Boolean);
+
+  const calculatePrice = () => {
+    let total = 0;
+    if (checkedItems.photo) total += 5000 * days;
+    if (checkedItems.video) total += 5000 * days;
+    if (checkedItems.edit) total += 2500 * days;
+    if (checkedItems.album) total += 2500 * days;
+    return total;
+  };
+
+  const totalPrice = calculatePrice();
+
   return (
     <section className="silver-item" id="silver-item">
       <div className="silver-container">
@@ -7,38 +35,78 @@ function SilverSection() {
 
           <div className="list-box">
             <div className="pairs">
-              <input type="checkbox" name="checkbox1" id="checkBox1" checked />
+              <input
+                type="checkbox"
+                name="checkbox1"
+                id="checkBox1"
+                checked={checkedItems.photo}
+                onChange={() => handleCheckboxChange("photo")}
+              />
               <h4>Basic Photography</h4>
-              <p>Price: 5,000</p>
             </div>
             <div className="pairs">
-              <input type="checkbox" name="checkbox2" id="checkBox2" checked />
+              <input
+                type="checkbox"
+                name="checkbox2"
+                id="checkBox2"
+                checked={checkedItems.video}
+                onChange={() => handleCheckboxChange("video")}
+              />
               <h4>Basic Videography</h4>
-              <p>Price: 5,000</p>
             </div>
             <div className="pairs">
-              <input type="checkbox" name="checkbox3" id="checkBox3" checked />
+              <input
+                type="checkbox"
+                name="checkbox3"
+                id="checkBox3"
+                checked={checkedItems.edit}
+                onChange={() => handleCheckboxChange("edit")}
+              />
               <h4>Basic Video Editing</h4>
-              <p>Price: 2,500</p>
             </div>
             <div className="pairs">
-              <input type="checkbox" name="checkbox4" id="checkBox4" checked />
-              <h4>Simple color correction with Album</h4>
-              <p>Price: 2,500</p>
+              <input
+                type="checkbox"
+                name="checkbox4"
+                id="checkBox4"
+                checked={checkedItems.album}
+                onChange={() => handleCheckboxChange("album")}
+              />
+              <h4>Album</h4>
             </div>
           </div>
 
           <div className="form-box">
+            <div className="custom-dropdown">
+              <div
+                className="dropdown-button"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
+                View Price Information ▼
+              </div>
+              {dropdownOpen && (
+                <ul className="dropdown-list">
+                  <li>Basic Photography - ₹5,000 (1 day)</li>
+                  <li>Basic Videography - ₹5,000 (1 day)</li>
+                  <li>Basic Video Editing - ₹2,500 (1 day)</li>
+                  <li>Simple Color Correction With Album - ₹2,500 (1 day)</li>
+                </ul>
+              )}
+            </div>
             <form action="#">
               <label htmlFor="days">Select Days</label>
-              <select name="days" id="days">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
+              <select
+                name="days"
+                id="days"
+                value={days}
+                onChange={(e) => setDays(Number(e.target.value))}
+                disabled={isFormDisabled}
+              >
+                {[1, 2, 3, 4, 5, 6, 7].map((day) => (
+                  <option key={day} value={day}>
+                    {day}
+                  </option>
+                ))}
               </select>
 
               <label htmlFor="price">Price</label>
@@ -47,7 +115,7 @@ function SilverSection() {
                 name="price"
                 id="price"
                 className="inputBox"
-                value={"15,000"}
+                value={`₹${totalPrice.toLocaleString()}`}
                 disabled
               />
 
@@ -58,6 +126,7 @@ function SilverSection() {
                 className="inputBox"
                 placeholder="Name"
                 required
+                disabled={isFormDisabled}
               />
               <input
                 type="number"
@@ -66,6 +135,7 @@ function SilverSection() {
                 className="inputBox"
                 placeholder="Phone"
                 required
+                disabled={isFormDisabled}
               />
               <input
                 type="email"
@@ -74,6 +144,7 @@ function SilverSection() {
                 className="inputBox"
                 placeholder="Email"
                 required
+                disabled={isFormDisabled}
               />
               <input
                 type="address"
@@ -82,6 +153,7 @@ function SilverSection() {
                 className="inputBox"
                 placeholder="Address"
                 required
+                disabled={isFormDisabled}
               />
             </form>
           </div>

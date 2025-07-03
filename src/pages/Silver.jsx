@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Loader from "../components/loader";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import SilverSection from "../SilverComponent/SilverSection";
 import "../App.css";
 import AOS from "aos";
@@ -32,7 +32,7 @@ function Silver() {
         <Loader />
       ) : (
         <>
-          <Navbar />
+          {/* <Navbar /> */}
           <SilverSection />
         </>
       )}

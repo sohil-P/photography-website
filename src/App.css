@@ -199,6 +199,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  color: #22333b;
 }
 
 .content-text h3 {
@@ -223,9 +224,11 @@ a {
   border: none;
   padding: 12px 30px;
   border-radius: 30px;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
   cursor: pointer;
   margin: 10px 0;
+  font-size: 16px;
 }
 
 /* Home Responsive */
@@ -499,7 +502,7 @@ a {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   padding: 20px;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -549,7 +552,8 @@ a {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -562,14 +566,12 @@ a {
 }
 
 .arrow-icon span {
-  color: #000;
   font-size: 24px;
   font-weight: bold;
   transition: transform 0.5s ease;
 }
 
 .arrow-icon:hover {
-  background-image: linear-gradient(135deg, #f4f5f7 0%, #c4c5c6 100%);
   transform: scale(1.1);
 }
 
@@ -585,21 +587,20 @@ a {
 }
 
 .demo-btn button {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #2c2c2c;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
   padding: 15px 25px;
   margin-left: 20px;
   border: none;
   border-radius: 50px;
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   transition: background 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .demo-btn button:hover {
-  background-image: linear-gradient(135deg, #f4f5f7 0%, #c4c5c6 100%);
   transform: scale(1.05);
 }
 
@@ -711,7 +712,7 @@ a {
 }
 
 .portfolio-btn button {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   color: #f1f0f0;
   padding: 15px 30px;
   border: none;
@@ -795,14 +796,14 @@ a {
 }
 
 .pricing-card ul li i {
-  color: #c3cfe2;
+  color: #22333b;
   margin-top: 3px;
 }
 
 .pricing-btn {
   display: inline-block;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #22333b;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
   padding: 12px 20px;
   border: none;
   border: 1px solid #c3cfe2;
@@ -811,10 +812,6 @@ a {
   font-weight: bold;
   transition: background 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-}
-
-.pricing-btn:hover {
-  background: #c3cfe2;
 }
 
 .p-one,
@@ -907,8 +904,8 @@ a {
 .icon-circle {
   width: 50px;
   height: 50px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #2c2c2c;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -932,7 +929,7 @@ a {
 
 .contact-info hr {
   border: none;
-  border-top: 1px solid #c3cfe2;
+  border-top: 1px solid #22333b;
   width: 100%;
 }
 
@@ -951,7 +948,7 @@ a {
 .contact-form input,
 .contact-form textarea {
   padding: 14px 20px;
-  border: 1px solid #c3cfe2;
+  border: 1px solid #22333b;
   border-radius: 30px;
   font-size: 16px;
   background: transparent;
@@ -965,8 +962,8 @@ a {
 
 .contact-form button {
   align-self: flex-start;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #22333b;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
   padding: 15px 30px;
   border: none;
   border: 1px solid #c3cfe2;
@@ -1050,8 +1047,8 @@ a {
   height: 50px;
   width: 50px;
   font-size: 22px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #2c2c2c;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
   padding: 12px;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -1059,7 +1056,6 @@ a {
 }
 
 .footer-icons a:hover {
-  background-color: #e0fbff;
   transform: scale(1.1);
 }
 
