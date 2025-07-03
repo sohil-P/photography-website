@@ -155,6 +155,15 @@ function SilverSection() {
                 required
                 disabled={isFormDisabled}
               />
+
+              <button
+                type="submit"
+                name="PayBtn"
+                id="PayBtn"
+                className="PayBtn"
+              >
+                Pay Now
+              </button>
             </form>
           </div>
         </div>
