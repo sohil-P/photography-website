@@ -23,6 +23,7 @@
   padding: 20px;
   height: 90vh;
   width: 400px;
+  border: 3px solid #22333b;
   border-radius: 10px;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18), 0 1.5px 6px 0 rgba(0, 0, 0, 0.1);
   scrollbar-width: none;
