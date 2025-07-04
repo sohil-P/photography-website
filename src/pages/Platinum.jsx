@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import Loader from "../components/loader";
-import SilverSection from "../SilverComponent/SilverSection";
+import PlatinumSection from "../PlatinumComponents/PlatinumSection";
 import "../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../Silver.css";
 
-function Silver() {
+function Platinum() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -31,11 +31,11 @@ function Silver() {
         <Loader />
       ) : (
         <>
-          <SilverSection />
+          <PlatinumSection />
         </>
       )}
     </>
   );
 }
 
-export default Silver;
+export default Platinum;

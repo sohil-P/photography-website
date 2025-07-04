@@ -19,14 +19,14 @@ function Pricing() {
               <i className="fas fa-check-circle"></i> <p>Basic Photography</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> <p>Basic video shoot</p>
+              <i className="fas fa-check-circle"></i> <p>Basic Videoshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> <p>Basic video editing</p>
+              <i className="fas fa-check-circle"></i> <p>Basic Video Editing</p>
             </li>
             <li>
               <i className="fas fa-check-circle"></i>
-              <p>Simple color correction</p>
+              <p>Simple Color Correction With Album</p>
             </li>
           </ul>
           <Link to={"/Silver"}>
@@ -46,33 +46,35 @@ function Pricing() {
           <h3>Gold Package</h3>
           <ul>
             <li>
-              <i className="fas fa-check-circle"></i> <p>DSLR video shoot</p>
+              <i className="fas fa-check-circle"></i> <p>DSLR Videoshoot</p>
             </li>
             <li>
               <i className="fas fa-check-circle"></i>
-              <p>Taditional photo shoot</p>
+              <p>Taditional Photoshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> <p>Drone shoot</p>
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i>
-              <p>Advance video editing with special effects</p>
+              <i className="fas fa-check-circle"></i> <p>Drone Shoot</p>
             </li>
             <li>
               <i className="fas fa-check-circle"></i>
-              <p> Color grading</p>
+              <p>Advance Video Editing With Special Effects</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> <p>Normal reels</p>
+              <i className="fas fa-check-circle"></i>
+              <p> Color Grading</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> <p>Invitation card</p>
+              <i className="fas fa-check-circle"></i> <p>Normal Reels</p>
+            </li>
+            <li>
+              <i className="fas fa-check-circle"></i> <p>Invitation Card</p>
             </li>
           </ul>
-          <button type="button" className="pricing-btn p-two">
-            Get Started
-          </button>
+          <Link to={"/Golden"}>
+            <button type="button" className="pricing-btn p-two">
+              Get Started
+            </button>
+          </Link>
         </div>
 
         {/* Platinum Package */}
@@ -86,36 +88,42 @@ function Pricing() {
           <ul>
             <li>
               <i className="fas fa-check-circle"></i>
-              <p>Traditional photoshoot</p>
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i> <p>Candid photoshoot</p>
+              <p>Traditional Photoshoot</p>
             </li>
             <li>
               <i className="fas fa-check-circle"></i>
-              <p>Cinematic videoshoot</p>
+              <p>Traditional Videoshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> <p>Droneshoot</p>
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i>
-              <p>Cinematic video editing(high-level color grading)</p>
-            </li>
-            <li>
-              <i className="fas fa-check-circle"></i> <p>Cinametic reels</p>
+              <i className="fas fa-check-circle"></i> <p>Candid Photoshoot</p>
             </li>
             <li>
               <i className="fas fa-check-circle"></i>
-              <p>Advance invitation card</p>
+              <p>Cinematic Videoshoot</p>
             </li>
             <li>
-              <i className="fas fa-check-circle"></i> <p>Pre-wedding shoot</p>
+              <i className="fas fa-check-circle"></i> <p>Drone Shoot</p>
+            </li>
+            <li>
+              <i className="fas fa-check-circle"></i>
+              <p>Cinematic Video Editing(High-Level Color Grading)</p>
+            </li>
+            <li>
+              <i className="fas fa-check-circle"></i> <p>Cinametic Reels</p>
+            </li>
+            <li>
+              <i className="fas fa-check-circle"></i>
+              <p>Advance Invitation Card</p>
+            </li>
+            <li>
+              <i className="fas fa-check-circle"></i> <p>Pre-Wedding Shoot</p>
             </li>
           </ul>
-          <button type="button" className="pricing-btn p-three">
-            Get Started
-          </button>
+          <Link to={"/Platinum"}>
+            <button type="button" className="pricing-btn p-three">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
     </section>

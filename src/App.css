@@ -136,7 +136,7 @@ a {
 /* Home Section Styles */
 .home-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   background: url("/public/Images/photo-bg.webp") no-repeat center/cover;
   display: flex;
   align-items: center;

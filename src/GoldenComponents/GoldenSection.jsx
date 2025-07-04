@@ -1,12 +1,15 @@
 import { useState } from "react";
 
-function SilverSection() {
+function GoldenSection() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [checkedItems, setCheckedItems] = useState({
-    photo: true,
-    video: true,
-    edit: true,
-    album: true,
+    dslr: true,
+    Tphoto: true,
+    drone: true,
+    Avideo: true,
+    colorG: true,
+    Nreel: true,
+    Icard: true,
   });
 
   const [days, setDays] = useState(1);
@@ -18,20 +21,23 @@ function SilverSection() {
 
   const calculatePrice = () => {
     let total = 0;
-    if (checkedItems.photo) total += 5000 * days;
-    if (checkedItems.video) total += 5000 * days;
-    if (checkedItems.edit) total += 2500 * days;
-    if (checkedItems.album) total += 2500 * days;
+    if (checkedItems.dslr) total += 7000 * days;
+    if (checkedItems.Tphoto) total += 5000 * days;
+    if (checkedItems.drone) total += 3500 * days;
+    if (checkedItems.Avideo) total += 5000 * days;
+    if (checkedItems.colorG) total += 3000 * days;
+    if (checkedItems.Nreel) total += 1000 * days;
+    if (checkedItems.Icard) total += 500 * days;
     return total;
   };
 
   const totalPrice = calculatePrice();
 
   return (
-    <section className="silver-item" id="silver-item">
-      <div className="silver-container">
+    <section className="golden-item" id="golden-item">
+      <div className="golden-container">
         <div className="card">
-          <h1 className="silver-title">Silver Package</h1>
+          <h1 className="golden-title">Golden Package</h1>
 
           <div className="list-box">
             <div className="pairs">
@@ -39,40 +45,70 @@ function SilverSection() {
                 type="checkbox"
                 name="checkbox1"
                 id="checkBox1"
-                checked={checkedItems.photo}
-                onChange={() => handleCheckboxChange("photo")}
+                checked={checkedItems.dslr}
+                onChange={() => handleCheckboxChange("dslr")}
               />
-              <h4>Basic Photography</h4>
+              <h4>DSLR Videoshoot</h4>
             </div>
             <div className="pairs">
               <input
                 type="checkbox"
                 name="checkbox2"
                 id="checkBox2"
-                checked={checkedItems.video}
-                onChange={() => handleCheckboxChange("video")}
+                checked={checkedItems.Tphoto}
+                onChange={() => handleCheckboxChange("Tphoto")}
               />
-              <h4>Basic Videography</h4>
+              <h4>Taditional Photoshoot</h4>
             </div>
             <div className="pairs">
               <input
                 type="checkbox"
                 name="checkbox3"
                 id="checkBox3"
-                checked={checkedItems.edit}
-                onChange={() => handleCheckboxChange("edit")}
+                checked={checkedItems.drone}
+                onChange={() => handleCheckboxChange("drone")}
               />
-              <h4>Basic Video Editing</h4>
+              <h4>Drone Shoot</h4>
             </div>
             <div className="pairs">
               <input
                 type="checkbox"
                 name="checkbox4"
                 id="checkBox4"
-                checked={checkedItems.album}
-                onChange={() => handleCheckboxChange("album")}
+                checked={checkedItems.Avideo}
+                onChange={() => handleCheckboxChange("Avideo")}
               />
-              <h4>Simple Color Correction With Album</h4>
+              <h4>Advance Video Editing With Special Effects</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox5"
+                id="checkBox5"
+                checked={checkedItems.colorG}
+                onChange={() => handleCheckboxChange("colorG")}
+              />
+              <h4>Color Grading</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox6"
+                id="checkBox6"
+                checked={checkedItems.Nreel}
+                onChange={() => handleCheckboxChange("Nreel")}
+              />
+              <h4>Normal Reels</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox7"
+                id="checkBox7"
+                checked={checkedItems.Icard}
+                onChange={() => handleCheckboxChange("Icard")}
+              />
+              <h4>Invitation Card</h4>
             </div>
           </div>
 
@@ -86,10 +122,15 @@ function SilverSection() {
               </div>
               {dropdownOpen && (
                 <ul className="dropdown-list">
-                  <li>Basic Photography - ₹5,000 (1 Day)</li>
-                  <li>Basic Videography - ₹5,000 (1 Day)</li>
-                  <li>Basic Video Editing - ₹2,500 (1 Day)</li>
-                  <li>Simple Color Correction With Album - ₹2,500 (1 Day)</li>
+                  <li>DSLR Videoshoot - ₹7,000 (1 Day)</li>
+                  <li>Taditional Photoshoot - ₹5,000 (1 Day)</li>
+                  <li>Drone Shoot - ₹3,500 (1 Day)</li>
+                  <li>
+                    Advance Video Editing With Special Effects - ₹5,000 (1 Day)
+                  </li>
+                  <li>Color Grading - ₹3,000 (1 Day)</li>
+                  <li>Normal Reels - ₹1,000 (1 Day)</li>
+                  <li>Invitation Card - ₹500 (1 Day)</li>
                 </ul>
               )}
             </div>
@@ -172,4 +213,4 @@ function SilverSection() {
   );
 }
 
-export default SilverSection;
+export default GoldenSection;

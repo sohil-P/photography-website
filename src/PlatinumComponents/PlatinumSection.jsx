@@ -1,12 +1,17 @@
 import { useState } from "react";
 
-function SilverSection() {
+function PlatinumSection() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [checkedItems, setCheckedItems] = useState({
-    photo: true,
-    video: true,
-    edit: true,
-    album: true,
+    TPshoot: true,
+    TVshoot: true,
+    Cphoto: true,
+    Cvideo: true,
+    Dshoot: true,
+    CVedit: true,
+    Creel: true,
+    AIcard: true,
+    PWshoot: true,
   });
 
   const [days, setDays] = useState(1);
@@ -18,20 +23,25 @@ function SilverSection() {
 
   const calculatePrice = () => {
     let total = 0;
-    if (checkedItems.photo) total += 5000 * days;
-    if (checkedItems.video) total += 5000 * days;
-    if (checkedItems.edit) total += 2500 * days;
-    if (checkedItems.album) total += 2500 * days;
+    if (checkedItems.TPshoot) total += 5000 * days;
+    if (checkedItems.TVshoot) total += 5000 * days;
+    if (checkedItems.Cphoto) total += 7000 * days;
+    if (checkedItems.Cvideo) total += 8000 * days;
+    if (checkedItems.Dshoot) total += 3500 * days;
+    if (checkedItems.CVedit) total += 8000 * days;
+    if (checkedItems.Creel) total += 2500 * days;
+    if (checkedItems.AIcard) total += 1000 * days;
+    if (checkedItems.PWshoot) total += 10000 * days;
     return total;
   };
 
   const totalPrice = calculatePrice();
 
   return (
-    <section className="silver-item" id="silver-item">
-      <div className="silver-container">
+    <section className="platinum-item" id="platinum-item">
+      <div className="platinum-container">
         <div className="card">
-          <h1 className="silver-title">Silver Package</h1>
+          <h1 className="platinum-title">Platinum Package</h1>
 
           <div className="list-box">
             <div className="pairs">
@@ -39,40 +49,90 @@ function SilverSection() {
                 type="checkbox"
                 name="checkbox1"
                 id="checkBox1"
-                checked={checkedItems.photo}
-                onChange={() => handleCheckboxChange("photo")}
+                checked={checkedItems.TPshoot}
+                onChange={() => handleCheckboxChange("TPshoot")}
               />
-              <h4>Basic Photography</h4>
+              <h4>Traditional Photoshoot</h4>
             </div>
             <div className="pairs">
               <input
                 type="checkbox"
                 name="checkbox2"
                 id="checkBox2"
-                checked={checkedItems.video}
-                onChange={() => handleCheckboxChange("video")}
+                checked={checkedItems.TVshoot}
+                onChange={() => handleCheckboxChange("TVshoot")}
               />
-              <h4>Basic Videography</h4>
+              <h4>Traditional Videoshoot</h4>
             </div>
             <div className="pairs">
               <input
                 type="checkbox"
                 name="checkbox3"
                 id="checkBox3"
-                checked={checkedItems.edit}
-                onChange={() => handleCheckboxChange("edit")}
+                checked={checkedItems.Cphoto}
+                onChange={() => handleCheckboxChange("Cphoto")}
               />
-              <h4>Basic Video Editing</h4>
+              <h4>Candid Photoshoot</h4>
             </div>
             <div className="pairs">
               <input
                 type="checkbox"
                 name="checkbox4"
                 id="checkBox4"
-                checked={checkedItems.album}
-                onChange={() => handleCheckboxChange("album")}
+                checked={checkedItems.Cvideo}
+                onChange={() => handleCheckboxChange("Cvideo")}
               />
-              <h4>Simple Color Correction With Album</h4>
+              <h4>Cinematic Videoshoot</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox5"
+                id="checkBox5"
+                checked={checkedItems.Dshoot}
+                onChange={() => handleCheckboxChange("Dshoot")}
+              />
+              <h4>Drone Shoot</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox6"
+                id="checkBox6"
+                checked={checkedItems.CVedit}
+                onChange={() => handleCheckboxChange("CVedit")}
+              />
+              <h4>Cinematic Video Editing(High-Level Color Grading)</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox7"
+                id="checkBox7"
+                checked={checkedItems.Creel}
+                onChange={() => handleCheckboxChange("Creel")}
+              />
+              <h4>Cinametic Reels</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox8"
+                id="checkBox8"
+                checked={checkedItems.AIcard}
+                onChange={() => handleCheckboxChange("AIcard")}
+              />
+              <h4>Advance Invitation Card</h4>
+            </div>
+            <div className="pairs">
+              <input
+                type="checkbox"
+                name="checkbox9"
+                id="checkBox9"
+                checked={checkedItems.PWshoot}
+                onChange={() => handleCheckboxChange("PWshoot")}
+              />
+              <h4>Pre-Wedding Shoot</h4>
             </div>
           </div>
 
@@ -86,10 +146,18 @@ function SilverSection() {
               </div>
               {dropdownOpen && (
                 <ul className="dropdown-list">
-                  <li>Basic Photography - ₹5,000 (1 Day)</li>
-                  <li>Basic Videography - ₹5,000 (1 Day)</li>
-                  <li>Basic Video Editing - ₹2,500 (1 Day)</li>
-                  <li>Simple Color Correction With Album - ₹2,500 (1 Day)</li>
+                  <li>Traditional Photoshoot - ₹5,000 (1 Day)</li>
+                  <li>Traditional Videoshoot - ₹5,000 (1 Day)</li>
+                  <li>Candid Photoshoot - ₹7,000 (1 Day)</li>
+                  <li>Cinematic Videoshoot - ₹8,000 (1 Day)</li>
+                  <li>Drone Shoot - ₹3,500 (1 Day)</li>
+                  <li>
+                    Cinematic Video Editing(High-Level Color Grading) - ₹8,000
+                    (1 Day)
+                  </li>
+                  <li>Cinametic Reels - ₹2,500 (1 Day)</li>
+                  <li>Advance Invitation Card - ₹1,000 (1 Day)</li>
+                  <li>Pre-Wedding Shoot - ₹10,000 (1 Day)</li>
                 </ul>
               )}
             </div>
@@ -172,4 +240,4 @@ function SilverSection() {
   );
 }
 
-export default SilverSection;
+export default PlatinumSection;
