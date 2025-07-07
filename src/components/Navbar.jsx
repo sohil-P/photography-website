@@ -11,9 +11,7 @@ function Navbar() {
     <nav className="navbar" data-aos="fade-down" data-aos-duration="1000">
       <div className="navbar-container">
         <div className="logo">
-          <a href="/">
-            <img src="Images/AI-digital-logo.webp" alt="Logo" />
-          </a>
+          <img src="./Images/Logo.webp" alt="Logo" />
         </div>
         <ul
           className={`nav-links ${menuActive ? "active" : ""}`}
