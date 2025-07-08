@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -16,6 +18,15 @@ function Footer() {
         <p className="footer-text">
           © 2025 AI Digital Studio. All rights reserved.
         </p>
+        <hr />
+        <div className="term-privacy-box">
+          <Link to={"./Privacy"}>
+            <p className="policy-text">Privacy Policy</p>
+          </Link>
+          <Link to={"./Terms"}>
+            <p className="terms-text">Terms & Conditions</p>
+          </Link>
+        </div>
       </div>
     </footer>
   );

@@ -1,0 +1,74 @@
+.policy-box,
+.terms-box {
+  width: 100%;
+  height: 100dvh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.policy-container,
+.terms-and-conditions {
+  width: 80%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: min(4em, 8%);
+  border-radius: 30px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18), 0 1.5px 6px 0 rgba(0, 0, 0, 0.1);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  color: #22333b;
+}
+
+.policy-container hr .terms-and-conditions hr {
+  border: none;
+  height: 1px;
+  background: #000;
+}
+
+.policy-container h1,
+.terms-and-conditions h1 {
+  margin: 0 0 25px 0;
+  font-size: 2rem;
+}
+
+.policy-container h2,
+.terms-and-conditions h2 {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.policy-container p,
+.terms-and-conditions p {
+  margin: 20px 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .policy-box,
+  .terms-box {
+    padding: 20px;
+  }
+  .policy-container p,
+  .terms-and-conditions p {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .policy-box,
+  .terms-box {
+    padding: 10px;
+  }
+  .policy-container,
+  .terms-and-conditions {
+    width: 100%;
+  }
+  .policy-container p,
+  .terms-and-conditions p {
+    text-align: left;
+    font-size: 14px;
+  }
+}

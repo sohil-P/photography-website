@@ -6,6 +6,8 @@ import Photography from "./pages/Photography.jsx";
 import Silver from "./pages/Silver.jsx";
 import Golden from "./pages/Golden.jsx";
 import Platinum from "./pages/Platinum.jsx";
+import Privacy from "./pages/Privacy.jsx";
+import Terms from "./pages/Terms.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -18,6 +20,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/Silver" element={<Silver />} />
         <Route path="/Golden" element={<Golden />} />
         <Route path="/Platinum" element={<Platinum />} />
+        <Route path="/Privacy" element={<Privacy />} />
+        <Route path="/Terms" element={<Terms />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
