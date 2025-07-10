@@ -198,7 +198,7 @@ function GoldenSection() {
               />
 
               <button
-                type="submit"
+                type="button"
                 name="PayBtn"
                 id="PayBtn"
                 className="PayBtn"

@@ -225,7 +225,7 @@ function PlatinumSection() {
               />
 
               <button
-                type="submit"
+                type="button"
                 name="PayBtn"
                 id="PayBtn"
                 className="PayBtn"

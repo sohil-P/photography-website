@@ -6,12 +6,14 @@ function Portfolio() {
         <img
           src="Images/portfolio-1.webp"
           alt="Portfolio 1"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
         />
         <img
           src="Images/portfolio-4.webp"
           alt="Portfolio 2"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="100"
@@ -19,6 +21,7 @@ function Portfolio() {
         <img
           src="Images/portfolio-3.webp"
           alt="Portfolio 3"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
@@ -26,6 +29,7 @@ function Portfolio() {
         <img
           src="Images/portfolio-8.webp"
           alt="Portfolio 4"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="300"
@@ -33,6 +37,7 @@ function Portfolio() {
         <img
           src="Images/portfolio-7.webp"
           alt="Portfolio 5"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="400"
@@ -40,6 +45,7 @@ function Portfolio() {
         <img
           src="Images/portfolio-6.webp"
           alt="Portfolio 6"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="500"
@@ -47,6 +53,7 @@ function Portfolio() {
         <img
           src="Images/portfolio-5.webp"
           alt="Portfolio 7"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="600"
@@ -54,6 +61,7 @@ function Portfolio() {
         <img
           src="Images/portfolio-2.webp"
           alt="Portfolio 8"
+          loading="lazy"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="700"

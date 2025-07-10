@@ -9,8 +9,12 @@ function Home() {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <img src="./Images/home-img1.webp" alt="" className="img1" />
-              <img src="./Images/home-img2.webp" alt="" className="img2" />
+              <img
+                src="./Images/Logo.webp"
+                alt="home-img"
+                loading="lazy"
+                className="img1"
+              />
             </div>
             <div className="content-text">
               <h3 data-aos="fade-up" data-aos-duration="1000">
@@ -33,13 +37,7 @@ function Home() {
                 portraits, events, or branding, we turn your story into visual
                 magic.
               </p>
-              <button
-                type="button"
-                className="homeBtn"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              >
+              <button type="button" className="homeBtn">
                 <a href="#portfolio">Visit Portfolio</a>
               </button>
             </div>

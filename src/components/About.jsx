@@ -10,11 +10,13 @@ function About() {
           <img
             src="Images/komit-1.webp"
             alt="Image 1"
+            loading="lazy"
             className="about-img img-top-left"
           />
           <img
             src="Images/maulik-img.webp"
             alt="Image 2"
+            loading="lazy"
             className="about-img img-bottom-right"
           />
         </div>
